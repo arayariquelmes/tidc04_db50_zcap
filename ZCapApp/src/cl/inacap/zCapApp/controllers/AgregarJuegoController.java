@@ -52,6 +52,10 @@ public class AgregarJuegoController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//TODO: Tarea generar la vista de ver juegos (sin el filtro)
+		
+		//Validar el formulario
 		String nombreTxt = request.getParameter("nombre-txt").trim();
 		String descripcionTxt = request.getParameter("descripcion-txt").trim();
 		String consolaTxt = request.getParameter("consola-select").trim();
@@ -63,7 +67,7 @@ public class AgregarJuegoController extends HttpServlet {
 		LocalDate fecha;
 		//Para convertir las fechas desde y hacia texto
 		DateTimeFormatter formater = DateTimeFormatter.ofPattern("yyyy-MM-dd"); // yyyy-MM-dd HH:mm:ss
-		
+		//Validar que esto no explote (try catch)
 		fecha = LocalDate.parse(fechaTxt,formater);
 
 		List<Consola> consolasFiltradas =  consolasDAO.filterByName(consolaTxt);

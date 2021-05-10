@@ -46,6 +46,7 @@ public class ConsolasDAO implements ConsolasDAOLocal {
 //			}
 //		}
 //		return aux;
+		//TODO: Enseñar como filtrar por objeto (no con retorno de lista)
 		return consolas.stream().filter(c->c.getNombre().contains(nombre)).collect(Collectors.toList());
 	}
 
