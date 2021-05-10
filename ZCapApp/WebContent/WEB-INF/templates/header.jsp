@@ -29,16 +29,17 @@
 
 						<div class="navbar-dropdown">
 							<a class="navbar-item" href="AgregarConsolaController.do"> Registrar </a> 
-							<a class="navbar-item">
+							<a class="navbar-item" href="VerConsolasController.do">
 								Ver </a> 
 					
 						</div>
 					</div>
 					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link"> Juegos </a>
+						<a class="navbar-link" > Juegos </a>
 
 						<div class="navbar-dropdown">
-							<a class="navbar-item"> Registrar </a> <a class="navbar-item">
+							<a class="navbar-item" href="AgregarJuegoController.do"> Registrar </a>
+							<a class="navbar-item">
 								Ver </a>
 						</div>
 					</div>
